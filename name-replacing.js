@@ -11,10 +11,10 @@ async function processLineByLine() {
     crlfDelay: Infinity
   });
   // Note: we use the crlfDelay option to recognize all instances of CR LF
-  // ('\r\n') in input.txt as a single line break.
+  // ('\r\n') in name-challenge.txt as a single line break.
 
   for await (const line of rl) {
-    // Each line in input.txt will be successively available here as `line`.
+    // Each line in name-challenge.txt will be successively available here as `line`.
   
    array = line.split(':');
 
